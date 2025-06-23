@@ -1,0 +1,208 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #ffe8f1;
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+  background-repeat: repeat;
+  background-size: auto;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Navigation Bar */
+nav {
+  background: #f4e1eb;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(4, 4, 4, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #944e77;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c060a1;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #fde4ec, #fff0f5);
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #5b2c6f;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #6d3d5b;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #944e77;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.btn:hover {
+  background-color: #c060a1;
+  transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #5b2c6f;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #fde4ec;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+/* Projects Section */
+.project {
+  background: #fdf1f5;
+  padding: 20px;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(148, 78, 119, 0.05);
+  display: flex;
+  flex-direction: center;
+}
+
+.project-card {
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #d7a6d7;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(148, 78, 119, 0.15);
+}
+
+.project h3 {
+  color: #944e77;
+  margin-bottom: 10px;
+}
+
+.project-card img {
+  border-radius: 15%;
+  width: 200px; 
+  height: 150px;  
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f4e1eb; 
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #dfc6d9;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fffafc;
+}
+
+form button {
+  align-self: flex-start;
+  background-color: #944e77;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c060a1;
+}
+
+/* Footer */
+footer {
+  background-color: #f9e6f0;
+  padding: 20px;
+  text-align: center;
+  color: #944e77;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #944e77;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
