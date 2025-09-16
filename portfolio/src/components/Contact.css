@@ -1,0 +1,18 @@
+form { display: flex; flex-direction: column; }
+form input, form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #dfc6d9;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fffafc;
+}
+form button {
+  background-color: #944e77;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+form button:hover { background-color: #c060a1; }

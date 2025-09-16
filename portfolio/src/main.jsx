@@ -1,0 +1,12 @@
+// main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css"; // global styles
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+// Note: Moved theme toggle, hamburger menu, and carousel logic into respective components for better React practices.

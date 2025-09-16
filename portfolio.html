@@ -11,16 +11,23 @@
 </head>
 <body>
     <!-- Header -->
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="container">
-      <h1>Portfolio</h1>
-    <ul>
+ <nav>
+  <div class="container">
+    <!-- Hamburger icon for mobile menu -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    
+    <h1>Portfolio</h1>
+
+    <!-- Navigation Links -->
+    <ul id="nav-links">
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
   </div>
 </nav>
 
@@ -43,18 +50,27 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2>My Projects</h2>
+
+      <!-- carousel -->
+    <div class="carousel">
+      <button class="carousel-btn prev">‹</button>
+      
+      <!-- Slide the cards-->
+   <div class="carousel-track">    
     <div class="project-card">
       <img src="https://www.southernidaholandscapecenter.com/cdn/shop/products/Osteospermum_FlowerPower_Spider_Purple_Bloom_35129.jpg?v=1678251333" alt="African Spider">
       <h3>Capstone</h3>
       <p>Description for capstone. <br>(<em>dating app? or Flower shop</em>)</p>
       <a href="#" class="btn">Bloom</a>
     </div>
+
     <div class="project-card">
       <img src="https://media.wired.co.uk/photos/606da03e687a704c2c3617da/16:9/w_2560,c_limit/encryption_1.jpg" alt="Project Two">
-      <h3>Project Two</h3>
+      <h3>Book Store</h3>
       <p>Description for project two.</p>
-      <a href="#" class="btn">Lets See</a>
+      <a href="#" class="btn">To The Store</a>
     </div>
+
     <div class="project-card">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRomENS5CoBAPNpFaNtGENcEpfpSoUulYtQaQ&s" alt="clouds">
       <h3>Weather App</h3><p>Real time and up to date weather <br> using weather API and React.</p>
@@ -62,6 +78,9 @@
     </div>
   </div>
     
+      <button class="carousel-btn next">›</button>
+    </div>
+    </div>          
   </section>
 
   <!-- Contact Form -->
@@ -80,6 +99,7 @@
     <p>© 2025 Tonnia Scott | <a href="www.linkedin.com/in/tonnia-scott-20a519210">LinkedIn</a> | <a href="https://github.com/TonniaSco?tab=projects">GitHub</a></p>
   </footer>
 
-    
+    <!-- JavaScript for Theme Toggle -->
+     <script src="main.js"></script>
 </body>
 </html>

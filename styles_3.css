@@ -47,6 +47,35 @@ nav a {
 nav a:hover {
   color: #c060a1;
 }
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #944e77;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hamburger:hover {
+  transform: rotate(10deg) scale(1.1);
+  color: #c060a1;
+}
+
+/* Mobile menu animation */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+  #nav-links.active {
+  max-height: 300px;
+}
+
 
 /* Hero Section */
 #hero {
@@ -117,7 +146,7 @@ section p {
 
 .project-card {
   max-width: 300px;
-  margin: 0 auto 20px auto;
+  margin: 10px auto 20px auto;
   text-align: center;
   border-radius: 15px;
   background-color: #d7a6d7;
@@ -205,4 +234,71 @@ footer a {
     width: 100%;
     text-align: center;
   }
+}
+/* Dark Mode Styles */
+/* Default light mode styles already in place */
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+nav.dark-mode {
+  background-color: #333;
+}
+
+.btn.dark-mode {
+  background-color: #444;
+  color: #fff;
+}
+
+/* smooth transition */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  max-width: 295px;
+  margin: 0 auto;
+  overflow: hidden; /* Hide the other cards */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  gap: 20px; /* Space between cards */
+  padding: 0 10px; /* Padding around the carousel */
+}
+
+.project-card {
+  flex: 0 0 100%; /* One card takes 100% width of carousel */
+  box-sizing: border-box;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #944e77;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 1.5rem;
+  border-radius: 55%;
+}
+
+.carousel-btn:hover {
+  background-color: #c060a1;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
 }
